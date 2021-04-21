@@ -18,8 +18,8 @@ const counterReducers = (state = initialState, action) => {
           return { ...state, number: state.number * 2 }
       case "divide_by_2":
           return { ...state, number: state.number / 2 }
-    //   case "random":
-    //     return Math.floor(Math.random() * max);
+          case "random":
+      return { ...state, number: Math.floor(Math.random () * 10000)};
 
       case "canoutto":
         return { ...state, number: state.number = 0 }

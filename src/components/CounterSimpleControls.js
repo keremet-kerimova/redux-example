@@ -29,9 +29,9 @@ const CounterSimpleControls = () => {
     dispatch({ type: "divide_by_2" });
   }
   
-  // function randomCallback(max) {
-  //   dispatch({ type: "random" });
-  // }
+  function randomCallback(max) {
+    dispatch({ type: "random" });
+  }
   function canouttoCallback(max) {
     dispatch({ type: "canoutto" });
   }
@@ -46,7 +46,7 @@ const CounterSimpleControls = () => {
       <button onClick={decrementBy10Callback}>-10</button>
       <button onClick={multiplyBy2Callback}>*2</button>
       <button onClick={divideBy2Callback}>/2</button>
-      {/* <button onClick={randomCallback}>*9</button> */}
+      <button onClick={randomCallback}>Random</button>
       <button onClick={canouttoCallback}>0</button>
     </div>
   );
