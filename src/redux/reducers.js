@@ -33,6 +33,7 @@ import React, { Component } from 'react';
 
 const initialState = {
   number: 0,
+ color:"red",
 }
 const counterReducer = (state = initialState, action) => {
   const newState = { ...state };

@@ -1,6 +1,7 @@
 import React from "react";
+import ColorDisplay from "./components/ColorDisplay";
 import CounterAdvancedControls from "./components/CounterAdvancedConrols";
-import CounterComplicatedControls from "./components/CounterComplicatedControls";
+
 import CounterDisplay from "./components/CounterDisplay";
 import CounterSimpleControls from "./components/CounterSimpleControls";
 
@@ -10,6 +11,7 @@ function App() {
         <CounterDisplay />
         <CounterSimpleControls />
         <CounterAdvancedControls />
+        <ColorDisplay />
    
         </div>
     )
