@@ -38,6 +38,14 @@ const initialState = {
 const counterReducer = (state = initialState, action) => {
   const newState = { ...state };
   switch (action.type) {
+    case "change_color":
+      newState.color = action.color
+      return newState;
+
+      case "change_slider":
+        newState.color = action.color
+        return newState;
+
     case "set_number":
       newState.number = action.number;
       return newState;

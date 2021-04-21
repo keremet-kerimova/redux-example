@@ -1,9 +1,12 @@
 import React from "react";
 import ColorDisplay from "./components/ColorDisplay";
 import CounterAdvancedControls from "./components/CounterAdvancedConrols";
-
 import CounterDisplay from "./components/CounterDisplay";
 import CounterSimpleControls from "./components/CounterSimpleControls";
+import  ColorSimpleColors from "./components/ColorSimpleColors";
+import SliderControls from "./components/Slidercontrols";
+
+ 
 
 function App() {
     return (
@@ -12,6 +15,8 @@ function App() {
         <CounterSimpleControls />
         <CounterAdvancedControls />
         <ColorDisplay />
+        <ColorSimpleColors />
+        <SliderControls />
    
         </div>
     )

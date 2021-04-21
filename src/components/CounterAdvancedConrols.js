@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-const CounterAdvancedControls = () => {
+const CounterAdvancedColors = () => {
   const [number, setNumber] = useState(0);
   const dispatch = useDispatch();
   function setCallback() {
@@ -16,4 +16,4 @@ const CounterAdvancedControls = () => {
     </div>
   );
 }
-export default CounterAdvancedControls
+export default CounterAdvancedColors
