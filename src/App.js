@@ -10,7 +10,7 @@ function App() {
         <CounterDisplay />
         <CounterSimpleControls />
         <CounterAdvancedControls />
-        <CounterComplicatedControls />
+   
         </div>
     )
 }
