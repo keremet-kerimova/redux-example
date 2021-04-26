@@ -31,33 +31,20 @@ import React, { Component } from 'react';
 // export default counterReducers;
 
 
-const initialState = {
-  number: 0,
- color:"red",
-}
-const counterReducer = (state = initialState, action) => {
-  const newState = { ...state };
-  switch (action.type) {
-    case "change_color":
-      newState.color = action.color
-      return newState;
+import { useDispatch, useSelector } from "react-redux";
 
-      case "change_slider":
-        newState.color = action.color
-        return newState;
+const SliderControls = () => {
+  const dispatch = useDispatch();
 
-    case "set_number":
-      newState.number = action.number;
-      return newState;
-    case "increment_by_1":
-      newState.number++;
-      return newState;
-    case "increment_by_10":
-      newState.number += 10;
-      return newState;
-    default:
-      break;
+  function changeSliderCallBack({ target}){
+    dispatch({type: "change_slider", color: target.value})
   }
-  return state;
+  return (
+    <div><h2> Slider controls</h2>
+   <input type="range" onChange={changeSliderCallBack}/><br></br>
+   <input type="range" onChange={changeSliderCallBack} /><br></br>
+   <input type="range" onChange={changeSliderCallBack} />
+    </div>
+  );
 }
-export default counterReducer
+export default SliderControls;

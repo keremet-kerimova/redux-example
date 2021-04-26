@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './App';
-import counterReducer from './redux/Reducers';
 import reportWebVitals from './reportWebVitals';
-const store = createStore(counterReducer);
+
+const store = createStore.combain;
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
